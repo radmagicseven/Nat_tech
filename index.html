@@ -1,8 +1,48 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Tech that I want</title>
-<h1>PIXEL 8</h1>
-<h1>Iphone 15 Pro</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JwAfHEHQKto?si=FLleVuz95rvJYUP6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Device Comparison</h1>
+    </header>
+    
+    <main>
+        <section class="comparison">
+            <div class="device" id="device1">
+                <h2>Device 1</h2>
+                <div class="performance">Performance: <span class="value">High</span></div>
+                <div class="cameras">Cameras: <span class="value">12MP + 8MP</span></div>
+                <div class="support">Support: <span class="value">1 year</span></div>
+            </div>
+            
+            <div class="device" id="device2">
+                <h2>Device 2</h2>
+                <div class="performance">Performance: <span class="value">Medium</span></div>
+                <div class="cameras">Cameras: <span class="value">16MP + 5MP</span></div>
+                <div class="support">Support: <span class="value">2 years</span></div>
+            </div>
+        </section>
+        
+        <section class="slider-container">
+            <h2>Image Comparison</h2>
+            <div class="slider">
+                <img src="device1-image.jpg" alt="Device 1 Image" class="image image1">
+                <img src="device2-image.jpg" alt="Device 2 Image" class="image image2">
+                <div class="slider-overlay"></div>
+                <input type="range" min="0" max="100" value="50" class="slider-range">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Device Comparison. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
